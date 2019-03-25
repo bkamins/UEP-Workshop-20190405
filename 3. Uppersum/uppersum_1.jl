@@ -1,5 +1,7 @@
 # Bogumił Kamiński, 2019-03-25
 
+using LinearAlgebra
+
 function uppersum(M)
     n = size(M, 1)
     s = 0
@@ -20,5 +22,5 @@ m
 @time sum(UpperTriangular(m))
 @time sum(UpperTriangular(m))
 
-@time uppersum(M)
-@time uppersum(M)
+@time uppersum(m)
+@time uppersum(m)
