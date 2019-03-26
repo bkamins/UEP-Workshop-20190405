@@ -3,11 +3,14 @@
 
 # can also work under Julia 0.6, JuMP 0.18.5 and Cbc 0.4.3
 
-using LinearAlgebra
+const JULIA1 = VERSION >= v"1.0"
+
+if JULIA1
+    using LinearAlgebra
+end
+
 using JuMP
 using Cbc
-
-const JULIA1 = VERSION >= v"1.0"
 
 function sudoku_solve(lines, idx)
     t = [lines[10idx-j][k] - '0' for j in 8:-1:0, k in 1:9]
