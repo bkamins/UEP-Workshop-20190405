@@ -21,7 +21,9 @@ using Pkg
 
 Pkg.add("Distributions") # 0.17.0
 Pkg.add("DataFrames") # 0.17.1
+Pkg.add("ForwardDiff") # v0.10.3
 Pkg.add("CSV") # 0.4.3
+Pkg.add("GLM") # 1.1.1
 Pkg.add("Flux") # 0.8.1
 Pkg.add("HTTP") # 0.8.0
 Pkg.add("JuMP") # 0.19.0
